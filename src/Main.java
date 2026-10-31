@@ -60,14 +60,14 @@ public class Main {
                 "}";
     }
 
-    public static String cancelOrder(String orderId) {
-        // Endpoint requires order ID and changes status to cancelled
-        return "{\n" +
-                "  \"status\": \"CANCELLED\",\n" +
-                "  \"message\": \"Order " + orderId + " has been successfully cancelled.\",\n" +
-                "  \"orderId\": \"" + orderId + "\"\n" +
-                "}";
-    }
+//    public static String cancelOrder(String orderId) {
+//        // Endpoint requires order ID and changes status to cancelled
+//        return "{\n" +
+//                "  \"status\": \"CANCELLED\",\n" +
+//                "  \"message\": \"Order " + orderId + " has been successfully cancelled.\",\n" +
+//                "  \"orderId\": \"" + orderId + "\"\n" +
+//                "}";
+//    }
 
     private static void sendResponse(HttpExchange exchange, int statusCode, String response) throws IOException {
         exchange.getResponseHeaders().set("Content-Type", "application/json");
